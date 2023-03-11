@@ -1,7 +1,7 @@
 export async function removeCard() {
-  return "";
+  return '';
 }
 
 export async function sortCardRandomly() {
-  return "";
+  return '';
 }

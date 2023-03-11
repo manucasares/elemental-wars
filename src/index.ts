@@ -1,8 +1,6 @@
-import "./style.css";
+import { removeCard, sortCardRandomly } from '@helpers/index';
 
-export { sum } from "./sum";
-
-import { removeCard, sortCardRandomly } from "./helpers/deck";
+import './styles/global.css';
 
 removeCard();
 sortCardRandomly();
