@@ -1,4 +1,5 @@
-export interface Card {
-  id: string;
+export interface CardConstructorParams {
   name: string;
+  ap: number;
+  hp: number;
 }

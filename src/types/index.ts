@@ -1,1 +1,1 @@
-export type { Card } from './card';
+export { CardConstructorParams } from './card';

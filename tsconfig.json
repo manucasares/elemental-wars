@@ -2,10 +2,11 @@
   "compilerOptions": {
     "baseUrl": "./src",
     "paths": {
-      "@types/*": ["types/*"],
+      "@customTypes/*": ["types/*"],
       "@helpers/*": ["helpers/*"],
       "@constants/*": ["constants/*"],
-      "@generators/*": ["generators/*"]
+      "@generators/*": ["generators/*"],
+      "@models/*": ["models/*"]
     },
     "rootDir": "./src",
     "target": "ESNext",

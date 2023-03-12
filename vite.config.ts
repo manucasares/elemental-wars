@@ -25,10 +25,11 @@ const formats = Object.keys(fileName) as Array<keyof typeof fileName>;
 module.exports = defineConfig({
   resolve: {
     alias: {
-      '@types': path.resolve(__dirname, 'src/types'),
+      '@customTypes': path.resolve(__dirname, 'src/types'),
       '@helpers': path.resolve(__dirname, 'src/helpers'),
       '@constants': path.resolve(__dirname, 'src/constants'),
-      '@generators': path.resolve(__dirname, 'src/types'),
+      '@generators': path.resolve(__dirname, 'src/generators'),
+      '@models': path.resolve(__dirname, 'src/models'),
     },
   },
   base: "./",
