@@ -4,55 +4,81 @@
     box-sizing: border-box;
 }
 
-.title {
-    text-align: center;
-    font-size: 3rem;
-    margin-top: 1rem;
-}
-
-.gridPlayers {
-    display: flex;
-    justify-content: space-between;
-}
-
-/* PLAYERS */
-.gridPlayers .players {
-    background-color: aqua;
+body {
     height: 100vh;
-    width: 20vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    width: 100vw;
+    background-image: url(../assets/images/png/board-bg.png);
+    background-size: cover;
+    box-shadow: inset 6px 6px 100px black;
 }
 
-.gridPlayers .players h2 {
-    font-size: 4rem;
+.player2 {
+    height: 23%;
 }
 
-.gridPlayers .players select {
-    margin: 1rem;
-    padding: 1rem 2rem;
-    font-size: 1.3rem;
-}
-
-
-/* BOARD */
-.gridPlayers .board {
+/* GRIDMANA */
+.gridMana {
+    width: 20rem;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    margin: 1rem 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-direction: column-reverse;
+}
+
+.gridMana .bottle {
+    height: 70%;
+    width: 1.5rem;
+    background-image: url(../assets/images/png/mana-bottle-full.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.gridMana .bottleEmpty {
+    filter: brightness(0.4);
+}
+
+/* GRIDCARDS */
+
+.player2 .gridCards {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+}
+
+.player2 .gridCards .backCard {
+    height: 100%;
+    width: 6rem;
+    background-image: url(../assets/images/png/BackCard.png);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.player2 .gridCards .backCard:nth-child(1) {
+    transform: rotate(15deg);
+}
+
+.player2 .gridCards .backCard:nth-child(2) {
+    transform: translateY(10px);
+}
+
+.player2 .gridCards .backCard:nth-child(3) {
+    transform: rotate(-15deg);
+}
+
+.player2 .gridCards .backCard:nth-child(1):hover {
+    transform: scale(1.1) rotate(15deg);
 
 }
 
-/* BUTON BOARD */
-.gridPlayers .board button {
-    margin-bottom: 2rem;
-    padding: 1rem;
-    background-color: black;
-    color: white;
-    cursor: pointer;
+.player2 .gridCards .backCard:nth-child(2):hover {
+    transform: scale(1.1) rotate(0);
+}
 
-
+.player2 .gridCards .backCard:nth-child(3):hover {
+    transform: scale(1.1) rotate(-15deg);
 }

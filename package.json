@@ -17,7 +17,8 @@
     "lint:styles": "stylelint ./**/*.{css,scss}",
     "format:scripts": "prettier . --write",
     "format:styles": "stylelint ./**/*.{css,scss} --fix",
-    "format": "npm run format:scripts && npm run format:styles"
+    "format": "npm run format:scripts && npm run format:styles",
+    "scss": "node-sass --watch scss -o css"
   },
   "devDependencies": {
     "@types/jsdom": "^20.0.1",
@@ -39,6 +40,8 @@
     "vite": "^4.0.4"
   },
   "dependencies": {
+    "node-sass": "^8.0.0",
+    "sass": "^1.59.3",
     "uuid": "^9.0.0"
   }
 }

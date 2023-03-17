@@ -1,38 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Elemental Wars</title>
-    <link rel="stylesheet" href="./src/styles/global.css" />
-  </head>
 
-  <body>
-    <main>
-      <div class="gridPlayers">
-        <div class="player1 players">
-          <h2>Player 1</h2>
-          <select name="deck" id="deckPlayer1">
-            <option value="0" disabled>Deck</option>
-            <option value="1">Card1</option>
-            <option value="2">Card2</option>
-          </select>
-        </div>
-        <div class="board" id="board">
-          <button id="btnStart">START BATTLE</button>
-        </div>
-        <div class="player2 players">
-          <h2>Player 2</h2>
-          <select name="deck" id="deckPlayer2">
-            <option value="0" disabled>Deck</option>
-            <option value="1">Card1</option>
-            <option value="2">Card2</option>
-          </select>
-        </div>
-      </div>
-    </main>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elemental Wars</title>
+  <link rel="stylesheet" href="./src/styles/global.css" />
+</head>
 
-    <script type="module" src="/src/index.ts"></script>
-  </body>
+<body>
+  <!-- Board bg -->
+
+  <!-- Player-2 -->
+  <section class="player2">
+    <!-- MANA SECTION -->
+    <div class="gridMana">
+      <div class="bottle"></div>
+      <div class="bottle"></div>
+      <div class="bottle"></div>
+      <div class="bottle"></div>
+      <div class="bottle bottleEmpty"></div>
+      <div class="bottle bottleEmpty"></div>
+      <div class="bottle bottleEmpty"></div>
+
+
+    </div>
+    <!-- CARDS SECTION -->
+    <div class="gridCards">
+      <div class="backCard"></div>
+      <div class="backCard"></div>
+      <div class="backCard"></div>
+    </div>
+  </section>
+
+  <!-- boardGame -->
+
+  <!-- Player-1 -->
+
+  <script type="module" src="/src/index.ts"></script>
+</body>
+
 </html>
