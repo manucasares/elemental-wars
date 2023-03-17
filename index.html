@@ -9,8 +9,9 @@
   <link rel="stylesheet" href="./src/styles/global.css" />
 </head>
 
+<!-- Board bg -->
+
 <body>
-  <!-- Board bg -->
 
   <!-- Player-2 -->
   <section class="player2">
@@ -24,7 +25,6 @@
       <div class="bottle bottleEmpty"></div>
       <div class="bottle bottleEmpty"></div>
 
-
     </div>
     <!-- CARDS SECTION -->
     <div class="gridCards">
@@ -32,11 +32,36 @@
       <div class="backCard"></div>
       <div class="backCard"></div>
     </div>
+    <!-- DECK -->
+    <div class="deckPlayer2"></div>
   </section>
 
   <!-- boardGame -->
 
+  <section class="boardGame">
+    <div class="line"></div>
+    <button class="passTurn">Pass turn</button>
+  </section>
+
   <!-- Player-1 -->
+  <section class="player1">
+    <div class="gridMana manap1">
+      <div class="bottle"></div>
+      <div class="bottle"></div>
+      <div class="bottle"></div>
+      <div class="bottle"></div>
+      <div class="bottle bottleEmpty"></div>
+      <div class="bottle bottleEmpty"></div>
+      <div class="bottle bottleEmpty"></div>
+
+    </div>
+    <!-- GridCards -->
+    <div class="gridCards">
+      <div class="frontCard"></div>
+      <div class="frontCard"></div>
+      <div class="frontCard"></div>
+    </div>
+  </section>
 
   <script type="module" src="/src/index.ts"></script>
 </body>

@@ -12,8 +12,11 @@ body {
     box-shadow: inset 6px 6px 100px black;
 }
 
-.player2 {
+.player2,
+.player1 {
     height: 23%;
+    display: flex;
+    justify-content: space-between;
 }
 
 /* GRIDMANA */
@@ -21,7 +24,6 @@ body {
     width: 20rem;
     height: 3rem;
     background-color: rgba(0, 0, 0, 0.3);
-    position: absolute;
     margin: 1rem 0;
     display: flex;
     justify-content: space-around;
@@ -47,6 +49,7 @@ body {
     justify-content: center;
     position: relative;
     height: 100%;
+    margin-right: 15%;
 }
 
 .player2 .gridCards .backCard {
@@ -82,3 +85,55 @@ body {
 .player2 .gridCards .backCard:nth-child(3):hover {
     transform: scale(1.1) rotate(-15deg);
 }
+
+
+/* DECK PLAYER2 */
+
+.player2 .deckPlayer2 {
+    height: 100%;
+    width: 6rem;
+    margin: 2rem 5rem 0 0;
+    background-image: url(../assets/images/png/BackCard.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* BOARDGAME */
+
+.boardGame {
+    height: 54%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boardGame .line {
+    width: 100%;
+    height: 5px;
+    background-image: url(../assets/images/png/line.png);
+}
+
+.boardGame .passTurn {
+    padding: 1rem;
+    position: absolute;
+    right: 5rem;
+    cursor: pointer;
+    background-color: rgb(26, 167, 26);
+    border-radius: 10px;
+    border: none;
+    font-weight: bolder;
+}
+
+
+/* PLAYER1 */
+
+/* MANA */
+
+.manap1 {
+    position: absolute;
+    bottom: 0 !important;
+}
+
+/* Cards */
