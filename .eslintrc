@@ -12,5 +12,7 @@
     "browser": true,
     "node": true
   },
-  "rules": {}
+  "rules": {
+    "@typescript-eslint/no-unused-vars": "error"
+  }
 }
