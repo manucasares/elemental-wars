@@ -1,141 +1,174 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    height: 100vh;
-    width: 100vw;
-    background-image: url(../assets/images/png/board-bg.png);
-    background-size: cover;
-    box-shadow: inset 6px 6px 100px black;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../assets/images/png/board-bg.png);
+  background-size: cover;
+  box-shadow: inset 6px 6px 100px black;
 }
 
 .player2,
 .player1 {
-    height: 23%;
-    display: flex;
-    justify-content: space-between;
+  height: 23%;
+  display: flex;
+  justify-content: space-between;
 }
-
-
 
 /* GRIDMANA */
 .gridMana {
-    width: 20rem;
-    height: 3rem;
-    background-color: rgba(0, 0, 0, 0.3);
-    margin: 1rem 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  width: 20rem;
+  height: 3rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .gridMana .bottle {
-    height: 70%;
-    width: 1.5rem;
-    background-image: url(../assets/images/png/mana-bottle-full.png);
-    background-position: center;
-    background-size: cover;
+  height: 70%;
+  width: 1.5rem;
+  background-image: url(../assets/images/png/mana-bottle-full.png);
+  background-position: center;
+  background-size: cover;
 }
 
 .gridMana .bottleEmpty {
-    filter: brightness(0.4);
+  filter: brightness(0.4);
 }
 
 /* GRIDCARDS */
 
 .player2 .gridCards {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    height: 100%;
-    margin-right: 15%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+  margin-right: 15%;
 }
 
-.player2 .gridCards .backCard {
-    height: 100%;
-    width: 6rem;
-    background-image: url(../assets/images/png/BackCard.png);
-    background-size: cover;
-    background-position: center;
-    cursor: pointer;
+.player2 .gridCards .backCard,
+.player1 .gridCards .backCard {
+  height: 100%;
+  width: 6rem;
+  background-image: url(../assets/images/png/BackCard.png);
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
 }
 
 .player2 .gridCards .backCard:nth-child(1) {
-    transform: rotate(15deg);
+  transform: rotate(15deg);
 }
 
 .player2 .gridCards .backCard:nth-child(2) {
-    transform: translateY(10px);
+  transform: translateY(10px);
 }
 
 .player2 .gridCards .backCard:nth-child(3) {
-    transform: rotate(-15deg);
+  transform: rotate(-15deg);
 }
 
 .player2 .gridCards .backCard:nth-child(1):hover {
-    transform: scale(1.1) rotate(15deg);
-
+  transform: scale(1.1) rotate(15deg);
 }
 
 .player2 .gridCards .backCard:nth-child(2):hover {
-    transform: scale(1.1) rotate(0);
+  transform: scale(1.1) rotate(0);
 }
 
 .player2 .gridCards .backCard:nth-child(3):hover {
-    transform: scale(1.1) rotate(-15deg);
+  transform: scale(1.1) rotate(-15deg);
 }
-
 
 /* DECK PLAYER2 */
 
 .player2 .deckPlayer2 {
-    height: 100%;
-    width: 6rem;
-    margin: 2rem 5rem 0 0;
-    background-image: url(../assets/images/png/BackCard.png);
-    background-size: cover;
-    background-position: center;
+  height: 100%;
+  width: 6rem;
+  margin: 2rem 5rem 0 0;
+  background-image: url(../assets/images/png/BackCard.png);
+  background-size: cover;
+  background-position: center;
 }
-
 
 /* BOARDGAME */
 
 .boardGame {
-    height: 54%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 54%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .boardGame .line {
-    width: 100%;
-    height: 5px;
-    background-image: url(../assets/images/png/line.png);
+  width: 100%;
+  height: 5px;
+  background-image: url(../assets/images/png/line.png);
 }
 
 .boardGame .passTurn {
-    padding: 1rem;
-    position: absolute;
-    right: 5rem;
-    cursor: pointer;
-    background-color: rgb(26, 167, 26);
-    border-radius: 10px;
-    border: none;
-    font-weight: bolder;
+  padding: 1rem;
+  position: absolute;
+  right: 5rem;
+  cursor: pointer;
+  background-color: rgb(26, 167, 26);
+  border-radius: 10px;
+  border: none;
+  font-weight: bolder;
 }
-
 
 /* PLAYER1 */
 
 /* MANA */
 
-.manap1 {
-    position: absolute;
-    bottom: 0 !important;
+.player1 {
+  display: flex;
+  width: 100% !important;
+  justify-content: center;
+}
+/* Cards */
+.player1 .gridCards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
 }
 
-/* Cards */
+.manap1 {
+  position: absolute;
+  bottom: 0 !important;
+  left: 0;
+}
+
+/* CARDS */
+.player1 .gridCards .frontCard {
+  height: 100%;
+  width: 6rem;
+  background: url(../assets/images/png/archer.png);
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  margin: 0 0.3rem;
+  border: 2px solid;
+}
+
+.player1 .gridCards .frontCard:nth-child(1) {
+  transform: rotate(-15deg);
+  z-index: 1;
+}
+
+.player1 .gridCards .frontCard:nth-child(2) {
+  transform: rotate(-5deg);
+  z-index: 2;
+}
+.player1 .gridCards .frontCard:nth-child(4) {
+  transform: rotate(15deg);
+  z-index: 3;
+}
