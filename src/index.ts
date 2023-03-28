@@ -1,4 +1,5 @@
-// import { Card, ManuCard } from '@models/index';
+/* // import { Card, ManuCard } from '@models/index';
+import { Logger } from 'sass';
 import { $ } from './helpers';
 
 function startBattle() {
@@ -9,3 +10,6 @@ const btnBATTLE = $('#btnStart');
 btnBATTLE?.addEventListener('click', () => {
   startBattle();
 });
+
+let x = 10;
+ */
